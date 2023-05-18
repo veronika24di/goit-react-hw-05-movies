@@ -26,7 +26,7 @@ const MovieDetails = () => {
   }, [moviesId]);
 
   if (!movieById) {
-    return <p className={css.error}>404 Not Found</p>;
+    return <p className={css.error}></p>;
   }
   const { title, poster_path, release_date, vote_average, overview, genres } =
     movieById;
